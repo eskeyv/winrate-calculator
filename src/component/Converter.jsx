@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Converter = () => {
   const [totalMatch, setTotalMatch] = useState("");
@@ -40,7 +41,7 @@ const Converter = () => {
 
   return (
     <div className="flex flex-col items-center justify-center w-screen h-screen px-10">
-      <h1 className="text-white text-4xl font-bold text-center px-[400px]">
+      <h1 className="text-white text-4xl font-bold text-center lg:px-[400px]">
         Winrate Calculator for Mobile Legends
       </h1>
       <section className="flex flex-col items-center justify-center w-full mt-10">
@@ -64,7 +65,7 @@ const Converter = () => {
             type="number"
             value={totalWR}
             onChange={handleTotalWR}
-            placeholder="Contoh : 52.1"
+            placeholder="Contoh : 52,1"
             className="w-full max-w-xs text-white input input-bordered bg-slate-700"
           />
         </div>
@@ -88,6 +89,9 @@ const Converter = () => {
             </div>
         </section>
       )}
+      <section className="mt-5">
+        <Link to="/winlose" className="text-white underline underline-offset-4">Cek Win dan Lose</Link>
+      </section>
     </div>
   );
 };
