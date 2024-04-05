@@ -41,9 +41,12 @@ const Converter = () => {
 
   return (
     <div className="flex flex-col items-center justify-center w-screen h-screen px-10">
-      <h1 className="text-white text-4xl font-bold text-center lg:px-[400px]">
+      <h1 className="text-white text-4xl font-bold text-center lg:px-[400px] py-4">
         Winrate Calculator for Mobile Legends
       </h1>
+      <span className="px-6 py-2 bg-[#ffffff0d] border border-[#ffffff0d] rounded rounded-full text-center">
+        <h2 className="text-white">Made with 💜 by Eskey</h2>
+      </span>
       <section className="flex flex-col items-center justify-center w-full mt-10">
         <div className="w-full max-w-xs form-control">
           <label className="label">
